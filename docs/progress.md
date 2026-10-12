@@ -2,7 +2,7 @@
 
 요구사항 36개(기능 27 + 비기능 9)는 모두 **같은 ID의 GitHub 이슈**로 관리합니다. 상태는 프로젝트 보드 칸으로, 우선순위와 구성요소는 라벨로 구분합니다.
 
-[:material-view-column: 프로젝트 보드 열기](https://github.com/orgs/PCU-super-maker/projects){ .md-button .md-button--primary }
+[:material-view-column: 프로젝트 보드 열기](https://github.com/orgs/PCU-super-maker/projects/1){ .md-button .md-button--primary }
 [:material-format-list-checks: 이슈 목록](https://github.com/PCU-super-maker/maker-docs/issues){ .md-button }
 
 ## 한눈에 보기
