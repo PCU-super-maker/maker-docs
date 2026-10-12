@@ -1,0 +1,19 @@
+/* Risk grade dots used in the risk-model table */
+.risk-dot {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  margin-right: 0.4em;
+  vertical-align: middle;
+}
+.risk-dot.ok { background: #2da44e; }
+.risk-dot.caution { background: #d4a72c; }
+.risk-dot.warning { background: #e16f24; }
+.risk-dot.danger { background: #cf222e; }
+
+/* Keep requirement IDs on one line */
+.md-typeset table:not([class]) td code { white-space: nowrap; }
+
+/* Status badge table: no extra padding around images */
+.md-typeset table:not([class]) td img { vertical-align: middle; }

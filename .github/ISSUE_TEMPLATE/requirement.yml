@@ -1,0 +1,37 @@
+name: 요구사항
+description: 새 기능·비기능 요구사항을 추가합니다
+title: "[FR-X00] "
+labels: ["기능"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제목의 `FR-X00`을 실제 ID로 바꿔 주세요. 문서의 [기능 요구사항](https://pcu-super-maker.github.io/maker-docs/requirements/functional/) 표에도 같은 ID로 한 줄 추가해야 합니다.
+  - type: textarea
+    id: requirement
+    attributes:
+      label: 요구사항
+      description: 시스템이 무엇을 해야 하는지 한두 문장으로
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: 구성요소
+      options: [노드, 게이트웨이, 서버, 위험도엔진, 대시보드, 공통]
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 우선순위
+      options: [필수, 권장, 선택]
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+      value: |
+        - [ ] 기능 구현
+        - [ ] 단독 동작 확인

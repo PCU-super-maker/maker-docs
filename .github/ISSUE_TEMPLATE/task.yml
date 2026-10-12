@@ -1,0 +1,19 @@
+name: 작업
+description: 요구사항이 아닌 일반 작업 (부품 구매, 발표 자료, 회의 등)
+title: "[작업] "
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 할 일
+    validations:
+      required: true
+  - type: input
+    id: due
+    attributes:
+      label: 마감
+      placeholder: "2026-10-20"
+  - type: textarea
+    id: notes
+    attributes:
+      label: 메모

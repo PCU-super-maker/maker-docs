@@ -1,0 +1,101 @@
+site_name: ForestGuard Docs
+site_description: 배재대 스마트 ICT 메이커톤 B-SANG 팀 — 산림 재난 통합 모니터링 노드 문서
+site_url: https://pcu-super-maker.github.io/maker-docs/
+repo_url: https://github.com/PCU-super-maker/maker-docs
+repo_name: PCU-super-maker/maker-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드로 전환
+  font:
+    text: "Noto Sans KR"
+    code: "JetBrains Mono"
+  icon:
+    logo: material/pine-tree
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/PCU-super-maker/maker-docs
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 소개: index.md
+  - 요구사항 분석서:
+      - requirements/index.md
+      - 1. 개요: requirements/overview.md
+      - 2. 이해관계자 및 사용자: requirements/stakeholders.md
+      - 3. 시스템 구성: requirements/architecture.md
+      - 4. 기능 요구사항: requirements/functional.md
+      - 5. 비기능 요구사항: requirements/non-functional.md
+      - 6. 하드웨어 요구사항: requirements/hardware.md
+      - 7. 데이터·인터페이스: requirements/interface.md
+      - 8. 위험도 판단 기준: requirements/risk-model.md
+      - 9. 제약사항 및 가정: requirements/constraints.md
+      - 10. 우선순위 및 검증: requirements/validation.md
+  - 진행 현황: progress.md
+  - 기여 가이드: contributing.md

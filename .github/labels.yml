@@ -1,0 +1,36 @@
+# Source of truth for issue labels. Synced by .github/workflows/labels.yml
+# 유형
+- name: 기능
+  color: "0969da"
+  description: 기능 요구사항 (FR)
+- name: 비기능
+  color: "8250df"
+  description: 비기능 요구사항 (NFR)
+
+# 구성요소
+- name: 노드
+  color: "1a7f37"
+  description: 센서 노드 회로·펌웨어
+- name: 게이트웨이
+  color: "4ac26b"
+  description: LoRa 수신·서버 전달
+- name: 서버
+  color: "0e8a16"
+  description: 데이터 저장·조회 API
+- name: 위험도엔진
+  color: "bf8700"
+  description: 산불·산사태 지수와 경보
+- name: 대시보드
+  color: "1f6feb"
+  description: 웹 지도·경보 화면
+
+# 우선순위
+- name: 필수
+  color: "cf222e"
+  description: MVP — 시연 시나리오 통과에 반드시 필요
+- name: 권장
+  color: "fbca04"
+  description: 필수 완료 후 진행
+- name: 선택
+  color: "d0d7de"
+  description: 시간이 남을 때 또는 향후 확장
