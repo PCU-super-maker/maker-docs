@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        제목의 `FR-X00`을 실제 ID로 바꿔 주세요. 문서의 [기능 요구사항](https://pcu-super-maker.github.io/maker-docs/requirements/functional/) 표에도 같은 ID로 한 줄 추가해야 합니다.
+        제목의 `FR-X00`을 실제 ID로 바꿔 주세요. 문서의 [기능 요구사항](https://maker.silentdraft.dev/requirements/functional/) 표에도 같은 ID로 한 줄 추가해야 합니다.
   - type: textarea
     id: requirement
     attributes:
